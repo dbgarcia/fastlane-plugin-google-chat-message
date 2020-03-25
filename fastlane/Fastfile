@@ -1,0 +1,6 @@
+lane :test do
+  google_chat_message(
+    text: "Hey <users/all>! \nYour pizza delivery *has arrived*! 🍲🎉 \nThank you for using _Jenkins Bot!_ \n<https://jenkins.io/|Link>", 
+    webhook: "https://chat.googleapis.com/v1/spaces/AAAAcKx-W7I/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=q01LfWicCsA3IXV8HiAmnew4pmm4B_mFLzma6oT0Yas%3D"
+  )
+end
