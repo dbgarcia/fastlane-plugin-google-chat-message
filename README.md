@@ -2,6 +2,7 @@
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-google_chat_message)
 
+![](https://github.com/dbgarcia/fastlane-plugin-google_chat_message/blob/develop/images/googlechatmessage.jpg?raw=true)
 ## Getting Started
 
 This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-google_chat_message`, add it to your project by running:
