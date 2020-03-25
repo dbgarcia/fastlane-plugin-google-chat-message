@@ -14,13 +14,58 @@ fastlane add_plugin google_chat_message
 
 Send simple text messages to Google Chat
 
-**Note to author:** Add a more detailed description about this plugin here. If your plugin contains multiple actions, make sure to mention them here.
+- Including links in message text
+
+    To provide alternate link text for your link, use the following syntax: 
+    ````
+    <https://example.com/foo|my link text>
+    ````
+    Example:
+    ````
+    send_text = "Hey click \n<https://jenkins.io/|my link text> 🌐!"
+    ````
+
+    Rendering Message: 
+    
+     Hey click [my link text](https://jenkins.io/) 🌐!
+      
+      
+
+- Messages that @mention specific users
+
+    A bot can @mention a user in a message, providing the user ID in the following syntax:
+    ````
+    <users/USER_ID>
+    ````
+    Example:
+    ````
+    send_text = "Hey <users/123456789012345678901> go 🏄‍♂️!"
+    ````
+    Rendering Message: 
+    
+       Hey @Josh go 🏄‍♂️!
+       
+       
+    
+- Using formatted text in messages
+    
+     [Basic formatting to the message text, including bold, italic, and strikethrough](https://developers.google.com/hangouts/chat/reference/message-formats/basic#using_formatted_text_in_messages)
+
 
 ## Example
 
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
 
-**Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
+````
+send_text = "Hey <users/all>! \nYour pizza delivery *has arrived*! 🍲🎉 \nThank you for using _Jenkins Bot!_ \n<https://jenkins.io/|Link>"
+
+google_chat(
+      text: send_text, 
+      webhook: 'http:// webhook'
+    )
+````
+
+
 
 ## Run tests for this plugin
 
