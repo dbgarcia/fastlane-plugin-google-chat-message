@@ -57,7 +57,7 @@ Send simple text messages to Google Chat
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
 
 ````
-send_text = "Hey <users/all>! \nYour pizza delivery *has arrived*! 🍲🎉 \nThank you for using _Jenkins Bot!_ \n<https://jenkins.io/|Link>"
+send_text = "Thank you for using Google Chat Message! 🎉"
 
 google_chat(
       text: send_text, 
