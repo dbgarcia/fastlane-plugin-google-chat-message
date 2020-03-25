@@ -17,11 +17,11 @@ Send simple text messages to Google Chat
 - Including links in message text
 
     To provide alternate link text for your link, use the following syntax: 
-    ````
+    ````ruby
     <https://example.com/foo|my link text>
     ````
     Example:
-    ````
+    ````ruby
     send_text = "Hey click \n<https://jenkins.io/|my link text> 🌐!"
     ````
 
@@ -38,7 +38,7 @@ Send simple text messages to Google Chat
     <users/USER_ID>
     ````
     Example:
-    ````
+    ````ruby
     send_text = "Hey <users/123456789012345678901> go 🏄‍♂️!"
     ````
     Rendering Message: 
@@ -56,7 +56,7 @@ Send simple text messages to Google Chat
 
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
 
-````
+````ruby
 send_text = "Thank you for using Google Chat Message! 🎉"
 
 google_chat(
