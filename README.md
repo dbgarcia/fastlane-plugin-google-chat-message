@@ -60,7 +60,7 @@ Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plu
 ````ruby
 send_text = "Thank you for using Google Chat Message! 🎉"
 
-google_chat(
+google_chat_message(
       text: send_text, 
       webhook: 'http:// webhook'
     )
